@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <table style="width:50%">
+        <style>
+          .table,th, td {
+          position: relative;;
+          border: 1px rosybrown;
+          width: 100%;
+          }
+  
+          .subject{
+          background-color: yellowgreen; 
+          }
+  
+          .score{
+           background-color: rebeccapurple;
+          }
+  
+        </style>
+          <script>
+              function table200(){
+                  document.getElementById("mydog").style.width="200px";
+              }
+              function table500(){
+                  document.getElementById("mydog").style.width= "500px";
+              }
+
+
+              function changeSpace1(){
+                document.getElementById("mydog").style.borderSpacing="1px";
+              }
+              function changeSpace15(){
+                document.getElementById("mydog").style.borderSpacing= "15px";
+              }
+              function changeSpace20(){
+                document.getElementById("mydog").style.borderSpacing= "20px";
+              }
+
+              function changeColor1(){
+                document.getElementById("mydog").style.backgroundColor= "Red";
+              }
+              function changeColor2(){
+                document.getElementById("mydog").style.backgroundColor= "Turquoise";
+              }
+              function changeColor3(){
+                document.getElementById("mydog").style.backgroundColor= "Pink";
+              } 
+              function changeColor4(){
+                document.getElementById("mydog").style.backgroundColor= "Violet";
+              }              
+              function reset(){
+                document.getElementById("mydog").style.backgroundColor="";
+                document.getElementById("mydog").style.borderSpacing="2px";
+                document.getElementById("mydog").style.width="200px";
+              }
+              
+
+
+            </script>
+  <br>
+      <table id="mydog" width="200px" >
+          <tr style="background-color:goldenrod">
+            <th>Math</th>
+            <th>English</th>
+            <th>Programming</th>
+          </tr>
+          <tr >
+            <td>90</td>
+            <td>60</td>
+            <td>80</td>
+          </tr>
+          <tr>
+              <td>80</td>
+              <td>86</td>
+              <td>98</td>
+            </tr>
+        </table>
+  
+      
+      <br>
+      <p> Change the Width of the table</p>
+      <input type="button" onclick="table200()" value="200px">
+      <input type="button" onclick="table500()" value="500px">
+
+      <p> Change the Border Spacing</p>
+      <input type="button" onclick="changeSpace1()" value="1px">
+      <input type="button" onclick="changeSpace15()" value="15px">
+      <input type="button" onclick="changeSpace20()" value="20px">
+
+      <p> Change the color</p>
+      <input type="button" style="background-color: royalblue;" onclick="changeColor1()" value="     ">
+      <input type="button" style="background-color: teal;" onclick="changeColor2()" value="     ">
+      <input type="button" style="background-color: grey;" onclick="changeColor3()" value="     ">
+      <input type="button" style="background-color: greenyellow;" onclick="changeColor4()" value="     ">
+
+      <input type="button" style="" onclick="reset()" value="Reset">
+
+</head>
+<body>
+    
+</body>
+</html>
